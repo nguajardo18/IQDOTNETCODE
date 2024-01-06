@@ -1,0 +1,41 @@
+El código proporcionado es una implementación de Python que utiliza la biblioteca pyshorteners para acortar URL y la biblioteca validators para validar si la URL ingresada es válida o no. 
+A continuación, proporciono la documentación del código, su implementación y su funcionamiento:
+
+Implementación:
+
+El código consta de dos funciones principales:
+
+    shorten_url(long_url, service='tinyurl'): Esta función toma una URL larga como entrada y un servicio de acortamiento de URL opcional (por defecto, 'tinyurl'). 
+Comprueba si la URL es válida utilizando la biblioteca validators y luego utiliza pyshorteners para acortarla utilizando el servicio especificado. 
+Devuelve la URL acortada o un mensaje de error si la URL no es válida o si ocurre algún error.
+
+    main(): Esta función permite al usuario ingresar una URL para acortarla. Luego, muestra la URL acortada si se pudo acortar con éxito. 
+El usuario puede continuar ingresando más URL para acortar o salir del programa.
+
+Funcionamiento:
+
+Cuando se ejecuta el programa, entra en el bucle principal de main(). 
+l usuario puede ingresar una URL válida que se acorta utilizando el servicio especificado (por defecto, TinyURL). 
+Luego, se muestra la URL acortada. El usuario tiene la opción de continuar ingresando más URL o salir del programa al responder "no" o "n" a la pregunta "¿Desea acortar otra URL?".
+
+-------------------------------------------------------------------
+Here's the documentation, implementation, and functionality of the provided Python code:
+
+Implementation:
+
+The code consists of two main functions:
+
+    shorten_url(long_url, service='tinyurl'): This function takes a long URL as input and an optional URL shortening service (default is 'tinyurl'). 
+It checks if the URL is valid using the validators library and then uses pyshorteners to shorten it using the specified service. 
+It returns the shortened URL or an error message if the URL is invalid or if any error occurs.
+
+    main(): This function allows the user to input a URL to be shortened. 
+It then displays the shortened URL if it was successfully shortened. 
+The user has the option to continue inputting more URLs or exit the program.
+
+Functionality:
+
+When the program is executed, it enters the main loop of main(). 
+The user can input a valid URL, which is then shortened using the specified service (by default, TinyURL). 
+The shortened URL is then displayed. 
+The user can choose to continue inputting more URLs or exit the program by answering "no" or "n" to the question "Do you want to shorten another URL?".
