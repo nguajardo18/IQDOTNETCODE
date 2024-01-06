@@ -1,0 +1,43 @@
+Conversor de Decimal a Fracción
+
+Descripción General
+
+El programa "Conversor de Decimal a Fracción" toma un número decimal ingresado por el usuario y lo convierte en una fracción. Utiliza la biblioteca fractions de Python para realizar esta conversión.
+Requisitos Previos
+
+Antes de utilizar este programa, asegúrese de tener Python instalado en su sistema. Además, no se requieren dependencias externas, ya que el programa utiliza la biblioteca estándar de Python fractions.
+Instalación
+
+No se requiere una instalación especial para este programa, ya que utiliza bibliotecas estándar de Python. Solo asegúrese de que Python esté instalado en su sistema.
+Uso
+
+Para utilizar el programa, siga estos pasos:
+
+    Ejecute el programa en su entorno Python preferido.
+    Ingrese un número decimal cuando se le solicite.
+    El programa convertirá el decimal ingresado en una fracción.
+    Mostrará tanto el decimal original como la fracción equivalente.
+    Puede repetir el proceso cuantas veces desee o salir del programa cuando lo desee.
+
+--------------------------------------------------------------------------------------------------
+
+Functionality of Decimal to Fraction Converter
+
+Overview
+
+The "Decimal to Fraction Converter" program takes a decimal number entered by the user and converts it into a fraction. It utilizes the Python fractions library to perform this conversion.
+Prerequisites
+
+Before using this program, ensure that you have Python installed on your system. Additionally, no external dependencies are required as the program uses Python's standard library fractions.
+Installation
+
+No special installation is required for this program since it utilizes Python's standard libraries. Just make sure that Python is installed on your system.
+Usage
+
+To use the program, follow these steps:
+
+    Run the program in your preferred Python environment.
+    Enter a decimal number when prompted.
+    The program will convert the entered decimal into a fraction.
+    It will display both the original decimal and the equivalent fraction.
+    You can repeat the process as many times as you like or exit the program when you wish.
