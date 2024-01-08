@@ -1,0 +1,87 @@
+My Dice Rolling Application
+
+El código proporcionado es una aplicación simple en Python que utiliza la biblioteca tkinter para crear una interfaz gráfica de usuario (GUI) para lanzar un par de dados y mostrar el resultado en la ventana. Aquí tienes una documentación básica del código:
+Clase DiceRoller:
+__init__(self, master)
+
+    Constructor de la clase DiceRoller.
+    master: El objeto principal de la aplicación tkinter.
+
+create_ui(self)
+
+    Método para crear la interfaz de usuario de la aplicación.
+    Crea una ventana principal y coloca en ella un campo de entrada para mostrar el resultado de los dados, un botón para lanzar los dados, un botón para reiniciar el campo de entrada y un botón para cerrar la aplicación.
+
+roll(self)
+
+    Método para simular el lanzamiento de dados.
+    Genera dos símbolos aleatorios de un dado de seis caras y muestra el resultado en el campo de entrada.
+
+reset(self)
+
+    Método para reiniciar el campo de entrada.
+    Borra el contenido del campo de entrada.
+
+exit_app(self)
+
+    Método para cerrar la aplicación.
+    Destruye la ventana principal y finaliza la ejecución.
+
+Función main():
+main()
+
+    Función principal de la aplicación.
+    Crea una instancia de la clase DiceRoller, crea una ventana tkinter y llama a mainloop() para iniciar la ejecución de la interfaz gráfica.
+
+Bloque if __name__ == '__main__':
+
+    El bloque condicional verifica si el script se está ejecutando como el programa principal.
+    Si es el programa principal, llama a la función main() para iniciar la aplicación.
+
+Este código crea una simple aplicación de lanzamiento de dados con una interfaz gráfica usando tkinter. 
+Cuando ejecutes este script, aparecerá una ventana con un campo de entrada, un botón para lanzar los dados, un botón para reiniciar y un botón para salir de la aplicación. 
+Puedes hacer clic en el botón "Roll Dice!" para obtener un resultado aleatorio de dos dados y verlo en el campo de entrada. 
+El botón "Reset" borra el campo de entrada, y el botón "Exit" cierra la aplicación.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Class DiceRoller:
+__init__(self, master)
+
+    Constructor of the DiceRoller class.
+    master: The main tkinter application object.
+
+create_ui(self)
+
+    Method to create the user interface of the application.
+    Creates a main window and places on it an input field to display the dice result, a button to roll the dice, a button to reset the input field, and a button to close the application.
+
+roll(self)
+
+    Method to simulate rolling dice.
+    Generates two random symbols representing the faces of a six-sided die and displays the result in the input field.
+
+reset(self)
+
+    Method to reset the input field.
+    Clears the content of the input field.
+
+exit_app(self)
+
+    Method to close the application.
+    Destroys the main window and exits the program.
+
+Function main():
+main()
+
+    The main function of the application.
+    Creates an instance of the DiceRoller class, creates a tkinter window, and calls mainloop() to start the GUI execution.
+
+if __name__ == '__main__': block:
+
+    The conditional block checks if the script is being run as the main program.
+    If it's the main program, it calls the main() function to start the application.
+
+This code creates a simple dice rolling application with a graphical user interface using tkinter. 
+When you run this script, a window will appear with an input field, a button to roll the dice, a button to reset the input field, and a button to exit the application. 
+You can click the "Roll Dice!" button to get a random result from two dice and see it in the input field. The "Reset" button clears the input field, and the "Exit" button closes the application.
