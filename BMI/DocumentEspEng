@@ -1,0 +1,75 @@
+BMI Calculator with Unit Conversion
+
+Este código en Python define un programa simple para calcular el Índice de Masa Corporal (IMC). Aquí tienes una descripción de cómo funciona:
+
+    calculate_bmi(height, weight, is_metric=True):
+        Esta función calcula el IMC en función de la altura y el peso proporcionados como entrada.
+        Toma tres parámetros: height (en metros si is_metric es True, en pies si is_metric es False), weight (en kilogramos si is_metric es True, en libras si is_metric es False), y un parámetro opcional is_metric (por defecto establecido en True).
+        Dentro de la función, verifica si is_metric es True, y si es así, utiliza la fórmula weight / (height ** 2) para calcular el IMC. Si is_metric es False, utiliza la fórmula weight / (height ** 2) * 703 para calcular el IMC.
+        El resultado se redondea a dos decimales y se devuelve. Si se produce un error de división por cero, devuelve None.
+
+    interpret_bmi(bmi):
+        Esta función interpreta el valor del IMC y devuelve un mensaje correspondiente sobre la categoría del IMC.
+        Toma el valor del IMC como entrada y luego lo compara con categorías predefinidas de IMC.
+        Según el valor del IMC, devuelve un mensaje que indica la categoría del IMC.
+
+    display_bmi_chart(categories):
+        Esta función toma una lista de categorías de IMC como entrada y las muestra de manera formateada, imprimiendo cada rango de categoría y su etiqueta.
+
+    convert_units(height, weight, is_metric):
+        Esta función convierte la altura y el peso entre unidades métricas e imperiales en función del parámetro is_metric.
+        Si is_metric es True, convierte la altura de metros a pies y el peso de kilogramos a libras. Si is_metric es False, convierte la altura de pies a metros y el peso de libras a kilogramos.
+
+    get_user_input():
+        Esta función obtiene la entrada del usuario para la altura, el peso y la preferencia de unidades (métricas o imperiales).
+        Pide al usuario que seleccione el sistema de unidades (1 para métrico, 0 para imperial), luego solicita la entrada de altura y peso.
+        Si el usuario proporciona una entrada no válida (por ejemplo, valores no numéricos), devuelve None para la altura y el peso, manteniendo la preferencia de unidades.
+
+    main():
+        Esta es la función principal del programa que contiene el bucle principal del calculador de IMC.
+        Presenta un menú con tres opciones: Calcular IMC, Convertir Unidades y Salir.
+        Dependiendo de la elección del usuario, llama a la función correspondiente:
+            Para la opción 1, calcula e interpreta el IMC utilizando las funciones calculate_bmi e interpret_bmi, luego muestra el gráfico del IMC.
+            Para la opción 2, convierte las unidades utilizando la función convert_units y muestra los valores convertidos.
+            Para la opción 3, sale del programa.
+        El programa sigue ejecutándose hasta que el usuario elige salir.
+
+El código define las categorías del IMC, muestra un menú para que el usuario interactúe y proporciona funcionalidad para calcular el IMC, convertir unidades y salir del programa.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+This Python code defines a simple BMI (Body Mass Index) calculator program. Here's a breakdown of how it works:
+
+    calculate_bmi(height, weight, is_metric=True):
+        This function calculates the BMI based on the height and weight provided as input.
+        It takes three parameters: height (in meters if is_metric is True, in feet if is_metric is False), weight (in kilograms if is_metric is True, in pounds if is_metric is False), and an optional is_metric parameter (defaulted to True).
+        Inside the function, it checks if is_metric is True, and if so, it uses the formula weight / (height ** 2) to calculate BMI. If is_metric is False, it uses the formula weight / (height ** 2) * 703 to calculate BMI.
+        The result is rounded to two decimal places and returned. If there's a division by zero error, it returns None.
+
+    interpret_bmi(bmi):
+        This function interprets the BMI value and returns a corresponding message about the BMI category.
+        It takes the BMI value as input and then checks it against predefined BMI categories.
+        Based on the BMI value, it returns a message indicating the BMI category.
+
+    display_bmi_chart(categories):
+        This function takes a list of BMI categories as input and displays them in a formatted manner, printing each category range and its label.
+
+    convert_units(height, weight, is_metric):
+        This function converts height and weight between metric and imperial units based on the is_metric parameter.
+        If is_metric is True, it converts height from meters to feet and weight from kilograms to pounds. If is_metric is False, it converts height from feet to meters and weight from pounds to kilograms.
+
+    get_user_input():
+        This function retrieves user input for height, weight, and unit preference (metric or imperial).
+        It prompts the user to select the unit system (1 for metric, 0 for imperial), then asks for height and weight input.
+        If the user provides invalid input (e.g., non-numeric values), it returns None for height and weight while keeping the unit preference.
+
+    main():
+        This is the main program function that contains the main loop of the BMI calculator.
+        It presents a menu with three options: Calculate BMI, Convert Units, and Exit.
+        Depending on the user's choice, it calls the corresponding function:
+            For option 1, it calculates and interprets BMI using the calculate_bmi and interpret_bmi functions, then displays the BMI chart.
+            For option 2, it converts units using the convert_units function and displays the converted values.
+            For option 3, it exits the program.
+        The program continues to run until the user chooses to exit.
+
+The code defines the BMI categories, displays a menu for the user to interact with, and provides functionality to calculate BMI, convert units, and exit the program.
