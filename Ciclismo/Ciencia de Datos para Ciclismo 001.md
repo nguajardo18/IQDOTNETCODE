@@ -4,7 +4,7 @@
 
 # Ciencia de Datos para Ciclismo - Cómo Leer Rutas GPX de Strava con Python
 
-<img src="C:\IQPython\ConGPX\DocX\img\portada.jpg" style="zoom:50%;" />
+<img src="https://iqdotnet.net/iqcode/portada.jpg" style="zoom:50%;" />
 
 ## Introducción a GPX, exploración y visualización de una ruta de Strava
 
@@ -30,7 +30,7 @@ Si estás siguiendo el proceso, dirígete a Strava y descarga cualquiera de tus 
 
 botón Exportar GPX
 
-![GPXStrava](img\GPXStrava.png)
+![GPXStrava](https://iqdotnet.net/iqcode/GPXStrava.png)
 
 ######                                                                                                                                              Imagen1
 
@@ -50,69 +50,69 @@ pip install gpxpy
 
 Ahora puedes lanzar Jupyter o cualquier otro editor de código para comenzar. Primero lo primero, vamos a ocuparnos de las importaciones de las bibliotecas:
 
-![image-20240427183813409](img\image-20240427183813409.png)
+![image-20240427183813409](https://iqdotnet.net/iqcode/image-20240427183813409.png)
 
 Utiliza la sintaxis del gestor de contexto de Python para leer y analizar un archivo GPX:
 
-![image-20240427183900483](img\image-20240427183900483.png)
+![image-20240427183900483](https://iqdotnet.net/iqcode/image-20240427183900483.png)
 
 Ten en cuenta que tendrás que cambiar la ruta para que coincida con tu sistema y el nombre del archivo GPX. Si todo salió bien, ahora deberías tener el archivo disponible en Python.
 
 Pero, ¿qué hay dentro? Vamos a ver:
 
-![image-20240427183949492](img\image-20240427183949492.png)
+![image-20240427183949492](https://iqdotnet.net/iqcode/image-20240427183949492.png)
 
 Es un objeto GPX específico con el nombre del recorrido y segmento, donde cada segmento contiene puntos de datos (latitud, longitud y elevación). Profundizaremos en estos en la siguiente sección, pero primero, exploremos un par de funciones útiles.
 
 Por ejemplo, puedes extraer el número total de puntos de datos en un archivo GPX:
 
-![image-20240427184059900](img\image-20240427184059900.png)
+![image-20240427184059900](https://iqdotnet.net/iqcode/image-20240427184059900.png)
 
 Hay un total de 6842 puntos, cada uno conteniendo datos de latitud, longitud y elevación. Esto será útil más adelante.
 
 También puedes obtener el rango de altitud:
 
-![image-20240427184141310](img\image-20240427184141310.png)
+![image-20240427184141310](https://iqdotnet.net/iqcode/image-20240427184141310.png)
 
 En términos simples, esto significa que el punto más bajo del recorrido está a 1843.4 metros sobre el nivel del mar, mientras que el más alto está a 1995.0 metros.
 
 También puedes extraer los metros totales de elevación ganados y perdidos:
 
-![image-20240427184246086](img\image-20240427184246086.png)
+![image-20240427184246086](https://iqdotnet.net/iqcode/image-20240427184246086.png)
 
 Mi ruta representa un recorrido de ida y vuelta, por lo que se espera ver valores idénticos o casi idénticos. Por último, puedes mostrar el contenido de tu archivo GPX en formato XML:
 
-![image-20240427184338306](img\image-20240427184338306.png)
+![image-20240427184338306](https://iqdotnet.net/iqcode/image-20240427184338306.png)
 
 Y eso es todo para lo básico. A continuación, verás cómo extraer puntos de datos individuales y convertirlos en un formato más legible: DataFrame de Pandas. Cómo Analizar Archivos GPX con Python
 
 Puedes verificar cuántos recorridos tiene tu archivo GPX ejecutando len(gpx.tracks). El mío tiene solo uno, y puedo acceder a él con la notación de indexación de listas de Python:
 
-![image-20240427184433030](img\image-20240427184433030.png)
+![image-20240427184433030](https://iqdotnet.net/iqcode/image-20240427184433030.png)
 
 No nos importa el nombre del recorrido, ya que es arbitrario en este caso. Lo que sí nos importa son los segmentos. Al igual que con los recorridos, mi archivo GPX tiene solo un segmento en este recorrido. Así es como puedes acceder a él:
 
-![image-20240427184458007](img\image-20240427184458007.png)
+![image-20240427184458007](https://iqdotnet.net/iqcode/image-20240427184458007.png)
 
 Y ahora puedes acceder a los puntos de datos individuales accediendo al array de puntos. Aquí están los primeros diez para mi ruta:
 
-![image-20240427184526090](img\image-20240427184526090.png)
+![image-20240427184526090](https://iqdotnet.net/iqcode/image-20240427184526090.png)
 
 Eso es todo lo que necesitamos para divertirnos un poco. Ahora verás cómo extraer puntos de datos individuales del archivo GPX:
 
-![image-20240427184558179](img\image-20240427184558179.png)
+![image-20240427184558179](https://iqdotnet.net/iqcode/image-20240427184558179.png)
 
 No es el código más bonito que hayas visto, pero hace el trabajo. Imprimamos las primeras tres entradas para verificar que hicimos todo correctamente:
 
-![image-20240427184622225](img\image-20240427184622225.png)
+![image-20240427184622225](https://iqdotnet.net/iqcode/image-20240427184622225.png)
 
 ¿Sabes qué es aún más práctico acerca de una lista de diccionarios? Puedes convertirla en un DataFrame de Pandas en un instante.
 
-![image-20240427184650963](img\image-20240427184650963.png)
+![image-20240427184650963](https://iqdotnet.net/iqcode/image-20240427184650963.png)
 
 Tienes que admitirlo, ¡fue bastante fácil! Necesitaremos este conjunto de datos en los siguientes artículos, así que vamos a guardarlo en un archivo CSV.
 
-![image-20240427184718283](img\image-20240427184718283.png)
+![image-20240427184718283](https://iqdotnet.net/iqcode/image-20240427184718283.png)
 
 Eso es todo por el análisis básico y el preprocesamiento que haremos hoy. También te mostraré cómo visualizar este conjunto de datos con Matplotlib, solo para ver si vamos por el camino correcto. 
 
@@ -124,9 +124,9 @@ Pista: no hagas la figura demasiado ancha, ya que haría que el mapa se vea extr
 
 El siguiente código para visualizar la ruta:
 
-![image-20240427184913423](img\image-20240427184913423.png)
+![image-20240427184913423](https://iqdotnet.net/iqcode/image-20240427184913423.png)
 
-![image-20240427184925760](img\image-20240427184925760.png)
+![image-20240427184925760](https://iqdotnet.net/iqcode/image-20240427184925760.png)
 
 Y quién lo diría, es idéntico a lo que teníamos en la Imagen 1, sin tener en cuenta lo obvio. Aprenderás todo sobre la visualización de mapas y rutas en el siguiente artículo.
 
